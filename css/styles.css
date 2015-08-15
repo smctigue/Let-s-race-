@@ -8,46 +8,62 @@ hr {
 	width: 75%;
 	position: relative;
 }
-.inline-block-track > * { display: inline-block; }
+input {
+
+}
+h3 {
+	display: inline;
+}
+.inline-block > * { display: inline-block; }
 
 .buttons { text-align: center; 
 			margin-top: 30px;
 }
-/*
-.shape {
-	height: 2em;
-	width: 1em;
-	border: .1em solid black;
-	margin-left: auto;
-    margin-right: auto;
-    width: 50px;
-}*/
+
+/* Images */
+
 .sprtsize {
 	width: 3%;
 }
-.start {
+.startln {
 	width: 6.5%;
 	float: left;
 	margin-top: 30px}
-.finish { 
+.finishln { 
 	width: 5%;
 	float: right;
 	margin-top: 35px;
 }
-.gameboard {
-	margin-top: 100px;
-	height: 150px;
-	width: 0 auto;
-	position: relative;
-	outline: 1px solid black;
-}
-.sonic {
+#sonic {
 	position: absolute;
 	margin-top: 10px;
 	margin-left: 100px;
 }
-.knuckles {
+#knuckles {
 	position: absolute;
 	margin-top: 85px;
 	margin-left: 100px;
+}
+
+/* Gameboard */
+
+.container {
+	position: relative;
+}
+
+/* Player text & Forms */
+
+#entrname {
+	position: relative;
+	font-size: 12px;
+}
+.player1 {
+	float: left;
+	margin-top: 250px;
+	margin-left: 50px;
+}
+.player2 {
+	float: right;
+	margin-top: 250px;
+	margin-right: 100px;
 }

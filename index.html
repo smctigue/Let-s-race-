@@ -4,45 +4,37 @@
 <link rel="stylesheet" href="css/styles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
-
 <body>
+
+<!-- Header and reset button-->
 <img src="css/imgs/readygo.jpg" alt="Ready Go">
-<div class="inline-block-track buttons">
-<input id='btn reset' type='button' value='Reset' href='/index.html'></input>
+<div class="inline-block buttons">
+<input type="button" value="Reset" onClick="history.go(0)">
 </div>
-<div class="gameboard">
-<img class="start" src="css/imgs/start.jpg" alt="starting line">
-<img class="finish" src="css/imgs/finish.jpg" alt="finish line">
-<img class="sonic sprtsize" src="css/imgs/sonicsprite.png" alt="sonicstill">
 
-<img class="knuckles sprtsize" src="css/imgs/knucklessprite.png" alt="knucklesstill">
-
+<!-- Game board / Racetrack! -->
+<div class="container">
+<img class="startln" src="css/imgs/start.jpg" alt="starting line">
+<img class="finishln" src="css/imgs/finish.jpg" alt="finish line">
+<div id="players">
+<img class="sonic sprtsize" id="sonic" src="css/imgs/sonicsprite.png" alt="sonicstill">
+<img class="sonic sprtsize" id="knuckles" src="css/imgs/knucklessprite.png" alt="knucklesstill">
+<div class="lane"></div>
 </div>
-<!-- <section class="inline-block-track centerbox ">
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-</section>
-<br>
-<section class="inline-block-track centerbox ">
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-<div class="shape"></div>
-</section> -->
+</div>
+
+<!-- Player Info & scoreboard -->
+<h3>Player 1: Sonic</h3>
+<h3>Player 2: Knuckles</h3>
+<div id="entrname" class="inline-block">
+<input type="form" class="player1" value="Enter your name">
+<input type="form" class="player2" value="Enter your name">
+</div>
+
+<!-- Javascript / jQuery -->
+
+<script class="movement" type="text/javascript" src="base.js"></script>
+
 
 </body>
 </html>
