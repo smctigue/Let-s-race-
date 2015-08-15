@@ -4,6 +4,10 @@ img {
     margin-right: auto;
     width: 50%;
 }
+hr {
+	width: 60%;
+	position: relative;
+}
 .inline-block-track > * { display: inline-block; }
 
 .buttons { text-align: center; 
@@ -17,4 +21,14 @@ img {
 	margin-left: auto;
     margin-right: auto;
     width: 50px;
+}
+.start {
+	width: 6.5%;
+	float: left;}
+.finish { 
+	width: 5%;
+	float: right;
+}
+.gameboard {
+	margin-top: 100px;
 }
