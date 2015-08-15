@@ -9,3 +9,12 @@ img {
 .buttons { text-align: center; 
 			margin-top: 30px;
 }
+
+.shape {
+	height: 2em;
+	width: 1em;
+	border: .1em solid black;
+	margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
