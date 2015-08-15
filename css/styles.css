@@ -22,13 +22,21 @@ hr {
     margin-right: auto;
     width: 50px;
 }
+.sprtsize {
+	width: 3%;
+}
 .start {
 	width: 6.5%;
-	float: left;}
+	float: left;
+	margin-top: 30px}
 .finish { 
 	width: 5%;
 	float: right;
+	margin-top: 30px;
 }
 .gameboard {
 	margin-top: 100px;
+}
+.centerbox {
+	text-align: center;}
 }
