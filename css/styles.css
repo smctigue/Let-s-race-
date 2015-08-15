@@ -5,7 +5,7 @@ img {
     width: 50%;
 }
 hr {
-	width: 60%;
+	width: 75%;
 	position: relative;
 }
 .inline-block-track > * { display: inline-block; }
@@ -13,7 +13,7 @@ hr {
 .buttons { text-align: center; 
 			margin-top: 30px;
 }
-
+/*
 .shape {
 	height: 2em;
 	width: 1em;
@@ -21,7 +21,7 @@ hr {
 	margin-left: auto;
     margin-right: auto;
     width: 50px;
-}
+}*/
 .sprtsize {
 	width: 3%;
 }
@@ -32,11 +32,22 @@ hr {
 .finish { 
 	width: 5%;
 	float: right;
-	margin-top: 30px;
+	margin-top: 35px;
 }
 .gameboard {
 	margin-top: 100px;
+	height: 150px;
+	width: 0 auto;
+	position: relative;
+	outline: 1px solid black;
 }
-.centerbox {
-	text-align: center;}
+.sonic {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 100px;
+}
+.knuckles {
+	position: absolute;
+	margin-top: 85px;
+	margin-left: 100px;
 }
