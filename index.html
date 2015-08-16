@@ -3,27 +3,33 @@
 <title>Racing Game</title>
 <link rel="stylesheet" href="css/styles.css">
 
-<!-- Javascript / jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script class="movement" type="text/javascript" src="base.js"></script>
+
 </head>
 <body>
 
-<!-- Header and reset button-->
+<!-- Header img and refresh button-->
 <img src="css/imgs/readygo.jpg" alt="Ready Go">
-<div class="inline-block buttons">
-<input type="button" value="Reset" onClick="history.go(0)">
+<div class="inline-block button">
+	<input type="button" value="Reset" onClick="history.go(0)">
 </div>
-<hr>
-<!-- Game board / Racetrack! -->
-<div id="players">
+
+<!-- Start/Finish & Characters -->
+
 <img class="startln" src="css/imgs/start.jpg" alt="starting line">
 <img class="finishln" src="css/imgs/finish.jpg" alt="finish line">
 
-<img id="sonic" src="css/imgs/sonicsprite.png" alt="sonicstill">
-<img id="knuckles" src="css/imgs/knucklessprite.png" alt="knucklesstill">
+<div id="sonicontainer">
+	<div id="sonicguy"><img id="sonicimg" src="css/imgs/sonicsprite.png" alt="sonicstill"></div>
 </div>
-<div class="sonicontainer">
+<div id="knuckcontainer">
+	<div id="knucklesguy"><img id="knucklesimg" src="css/imgs/knucklessprite.png" alt="knucklesstill"></div>
+</div>
+
+<!-- Racetrack / lanes -->
+
+<div class="soniclanes">
 <div class="lane">
     <div class="lane">
         <div class="lane">
@@ -65,7 +71,7 @@
         </div>
     </div>
 </div>
-<div class="knuckcontainer">
+<div class="knucklanes">
 <div class="lane">
     <div class="lane">
         <div class="lane">
@@ -111,8 +117,8 @@
 
 <!-- Player Info & scoreboard -->
 
-<h3 class="player1 inline-block">Player 1: Sonic</h3>
-<h3 class="player2 inline-block">Player 2: Knuckles</h3>
+<h3 class="player1 inline-block">Player 1: Sonic (a)</h3>
+<h3 class="player2 inline-block">Player 2: Knuckles (l)</h3>
 
 <div id="entrname" class="inline-block">
 <input type="form" class="playerform1" value="Enter your name">

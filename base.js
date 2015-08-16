@@ -1,7 +1,3 @@
-$(document).ready(function() {
-
-
-
 console.log('JS is working');
 
 
@@ -22,14 +18,12 @@ console.log('JS is working');
 //   		this.src = "css/imgs/sonicsprite.png"
 //   	}
 
+$(document).ready(function() {
 
+	$('.sonic').on("keypress", function moveSonic(event) {
 
-
-
-
-
-
-
-
-
+	    if (keyCode === 65 ) {
+	      $(".sonic").animate({ 'left' : '-=2px'});
+		};
+	});
 });

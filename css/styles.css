@@ -11,14 +11,14 @@ h3 {
 	position: relative;
 	top: 200px;
 }
+
 .inline-block > * { display: inline-block; }
 
-
-.buttons { text-align: center; 
+.button { text-align: center; 
 			margin-top: 30px;
 }
 
-/* Images */
+/* Images / Avatars */
 
 .startln {
 	width: 6.5%;
@@ -29,27 +29,33 @@ h3 {
 	float: right;
 	margin-top: 35px;
 }
-#sonic {
-	position: absolute;
-	margin-top: 10px;
-	margin-left: 100px;
-	width: 3%;
+#sonicontainer {
+	position: relative;
 }
-#knuckles {
+#sonicontainer {
+	position: relative;
+}
+#sonicguy {
 	position: absolute;
-	margin-top: 85px;
-	margin-left: 100px;
-	width: 3%;
+	margin-top: 6px;
+	margin-left: 75px;
+	width: 7%;
+}
+#knucklesguy {
+	position: absolute;
+	margin-top: 87px;
+	margin-left: 82px;
+	width: 6%;
 }
 
 /* Gameboard / Lanes */
 
-.sonicontainer {
+.soniclanes {
 	position: absolute;
 	top: 305px;
 	left: 68px;
 }
-.knuckcontainer {
+.knucklanes {
 	position: absolute;
 	top: 82px;
 	left: -2px;
@@ -85,5 +91,5 @@ h3 {
 	margin-left: 100px;
 }
 .playerform2 {
-	margin-left: 50px;
+	margin-left: 80px;
 }
