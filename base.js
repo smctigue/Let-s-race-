@@ -25,6 +25,8 @@ var knucklescont = document.getElementById('knuckcontainer');
 var moveLefts = 0;
 var moveLeftk = 0;
 
+//this wont work but it will soon!
+var winner = sonic || knuckles;
 //Moves characters by 2 px per specific keystroke
 function animate(x) {
 	if (x.keyCode === 65) {
@@ -34,6 +36,9 @@ function animate(x) {
 	if (x.keyCode === 76) {
 		moveLeftk += 5;
 		knucklesguy.style.left = moveLeftk + 'px';
+	}
+	if ((moveLefts <= 1200 + 'px') && (moveLeftk >= 1200 + 'px')) {
+		return winner;
 	}
 }
 document.onkeydown = animate;

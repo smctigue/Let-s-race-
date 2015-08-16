@@ -1,3 +1,4 @@
+
 img {
 	display: block;
     margin-left: auto;
@@ -29,29 +30,30 @@ h3 {
 	float: right;
 	margin-top: 35px;
 }
-#sonicontainer {
-	position: relative;
-}
-#sonicontainer {
-	position: relative;
-}
 #sonicguy {
 	position: absolute;
-	margin-top: 6px;
-	margin-left: 75px;
-	width: 7%;
+	margin-top: 1px;
+	margin-left: -23px;
+	width: 9%;
 	left: 0;
 }
 #knucklesguy {
 	position: absolute;
-	margin-top: 89px;
-	margin-left: 91px;
-	width: 6%;
+	margin-top: 82px;
+	margin-left: -13px;
+	width: 8%;
 	left: 0;
 }
 
 /* Gameboard / Lanes */
 
+#sonicontainer {
+	position: relative;
+	height: 165px;
+	width: 85%;
+	border: 1px;
+	margin: 0 auto;
+}
 .soniclanes {
 	position: absolute;
 	top: 305px;
@@ -78,11 +80,15 @@ h3 {
 
 .player1 {
 	float: left;
+	top: 100px;
+	left: 25px;
 }
 .player2 {
 	float: right;
+	top: 100px;
+	right: 25px;
 }
 .scoreboard {
 	text-align: center;
-	margin-top: 250px;
+	margin-top: 150px;
 }
