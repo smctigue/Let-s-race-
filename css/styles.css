@@ -40,12 +40,14 @@ h3 {
 	margin-top: 6px;
 	margin-left: 75px;
 	width: 7%;
+	left: 0;
 }
 #knucklesguy {
 	position: absolute;
 	margin-top: 89px;
-	margin-left: 84px;
+	margin-left: 91px;
 	width: 6%;
+	left: 0;
 }
 
 /* Gameboard / Lanes */
