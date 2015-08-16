@@ -22,30 +22,66 @@ var sonicontain = document.getElementById('sonicontainer');
 var knuckles = document.getElementById('knucklesguy');
 var knucklescont = document.getElementById('knuckcontainer');
 
-var moveLefts = 0;
-var moveLeftk = 0;
+var finishline = document.getElementById('finline');
 
-//this wont work but it will soon!
-var winner = sonic || knuckles;
-//Moves characters by 2 px per specific keystroke
+var moveLeftS = 0;
+var moveLeftK = 0;
+
+
+$('#startRace').click(function(){
+  var counter = 5;
+  setInterval(function() {
+    counter -= 1;
+    if (counter >= 0) {
+      span = document.getElementById("count");
+      span.innerHTML = counter;
+    }
+    if (counter === 0) {
+    	$("#count").text( "Go!" )
+        clearInterval(counter);
+    }
+  }, 1000);
+    
+});
+
+
+
+// Ends race
+function endRace(a) {
+	if (sonic == finishline) {
+		alert("Sonic wins!");
+	}
+
+
+document.onkeydown = animate;
+}
+
+//Moves characters by 5 px per specific keystroke
 function animate(x) {
 	if (x.keyCode === 65) {
-		moveLefts += 5;
-		sonicguy.style.left = moveLefts + 'px';
+		moveLeftS += 10;
+		sonicguy.style.left = moveLeftS + 'px';
 	}
 	if (x.keyCode === 76) {
-		moveLeftk += 5;
-		knucklesguy.style.left = moveLeftk + 'px';
+		moveLeftK += 10;
+		knucklesguy.style.left = moveLeftK + 'px';
 	}
-	if ((moveLefts <= 1200 + 'px') && (moveLeftk >= 1200 + 'px')) {
-		return winner;
-	}
+
 }
-document.onkeydown = animate;
+
+
+
+// Calls for race to begin!
+endRace();
 
 
 
 
+//End the 'round'
+
+
+// Count each rounds winner on the scoreboard
+// use for loop? Check rps/fund game
 
 
 //Close $(document).ready
