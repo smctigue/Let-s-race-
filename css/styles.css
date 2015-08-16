@@ -21,7 +21,7 @@ h3 {
 /* Images / Avatars */
 
 .startln {
-	width: 6.5%;
+	width: 7%;
 	float: left;
 	margin-top: 30px}
 .finishln { 
@@ -43,8 +43,8 @@ h3 {
 }
 #knucklesguy {
 	position: absolute;
-	margin-top: 87px;
-	margin-left: 82px;
+	margin-top: 89px;
+	margin-left: 84px;
 	width: 6%;
 }
 
@@ -57,8 +57,8 @@ h3 {
 }
 .knucklanes {
 	position: absolute;
-	top: 82px;
-	left: -2px;
+	top: 387px;
+	left: 68px;
 
 }
 .lane {
@@ -76,20 +76,11 @@ h3 {
 
 .player1 {
 	float: left;
-	margin-left: 100px;
 }
 .player2 {
 	float: right;
-	margin-left: 65px;
 }
-#entrname {
-	position: relative;
-	font-size: 12px;
+.scoreboard {
+	text-align: center;
 	margin-top: 250px;
-}
-.playerform1 {
-	margin-left: 100px;
-}
-.playerform2 {
-	margin-left: 80px;
 }
