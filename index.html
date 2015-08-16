@@ -14,13 +14,12 @@
 <div class="inline-block buttons">
 <input type="button" value="Reset" onClick="history.go(0)">
 </div>
-
+<hr>
 <!-- Game board / Racetrack! -->
-
+<div id="players">
 <img class="startln" src="css/imgs/start.jpg" alt="starting line">
 <img class="finishln" src="css/imgs/finish.jpg" alt="finish line">
 
-<div id="players">
 <img id="sonic" src="css/imgs/sonicsprite.png" alt="sonicstill">
 <img id="knuckles" src="css/imgs/knucklessprite.png" alt="knucklesstill">
 </div>
@@ -111,10 +110,11 @@
 </div>
 
 <!-- Player Info & scoreboard -->
-<h3 class="player1">Player 1: Sonic</h3>
-<h3 class="player2">Player 2: Knuckles</h3>
 
-<div id="entrname" class="inline">
+<h3 class="player1 inline-block">Player 1: Sonic</h3>
+<h3 class="player2 inline-block">Player 2: Knuckles</h3>
+
+<div id="entrname" class="inline-block">
 <input type="form" class="playerform1" value="Enter your name">
 <input type="form" class="playerform2" value="Enter your name">
 </div>

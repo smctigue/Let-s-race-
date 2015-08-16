@@ -5,17 +5,14 @@ img {
     width: 50%;
 }
 hr {
-	width: 75%;
-	display: inline;
+	position: absolute;
 }
 h3 {
 	position: relative;
-	margin-left: 100px;
-	margin-right: 100px;
-	margin-top: 250px;
+	top: 200px;
 }
 .inline-block > * { display: inline-block; }
-.inline > * { display: inline; }
+
 
 .buttons { text-align: center; 
 			margin-top: 30px;
@@ -45,7 +42,7 @@ h3 {
 	width: 3%;
 }
 
-/* Gameboard */
+/* Gameboard / Lanes */
 
 .sonicontainer {
 	position: absolute;
@@ -70,24 +67,23 @@ h3 {
 
 /* Player text & Forms */
 
-.player {
-	display: inline;
-	position: absolute;
-}
+
 .player1 {
 	float: left;
+	margin-left: 100px;
 }
 .player2 {
 	float: right;
-}
-.playerform1 {
-	float: left;
-}
-.playerform2 {
-	float: right;
+	margin-left: 65px;
 }
 #entrname {
 	position: relative;
 	font-size: 12px;
 	margin-top: 250px;
+}
+.playerform1 {
+	margin-left: 100px;
+}
+.playerform2 {
+	margin-left: 50px;
 }
