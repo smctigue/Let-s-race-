@@ -2,7 +2,10 @@
 <head>
 <title>Racing Game</title>
 <link rel="stylesheet" href="css/styles.css">
+
+<!-- Javascript / jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script class="movement" type="text/javascript" src="base.js"></script>
 </head>
 <body>
 
@@ -13,27 +16,108 @@
 </div>
 
 <!-- Game board / Racetrack! -->
-<div class="container">
+
 <img class="startln" src="css/imgs/start.jpg" alt="starting line">
 <img class="finishln" src="css/imgs/finish.jpg" alt="finish line">
+
 <div id="players">
-<img class="sonic sprtsize" id="sonic" src="css/imgs/sonicsprite.png" alt="sonicstill">
-<img class="sonic sprtsize" id="knuckles" src="css/imgs/knucklessprite.png" alt="knucklesstill">
-<div class="lane"></div>
+<img id="sonic" src="css/imgs/sonicsprite.png" alt="sonicstill">
+<img id="knuckles" src="css/imgs/knucklessprite.png" alt="knucklesstill">
+</div>
+<div class="sonicontainer">
+<div class="lane">
+    <div class="lane">
+        <div class="lane">
+            <div class="lane">
+                <div class="lane">
+                    <div class="lane">
+                    	<div class="lane">
+                        	<div class="lane">
+                        		<div class="lane">
+                        			<div class="lane">
+                        				<div class="lane">
+                        					<div class="lane">
+                        						<div class="lane">
+                        							<div class="lane">
+                        								<div class="lane">
+                        									<div class="lane">
+                        										<div class="lane">
+                        											<div class="lane">
+                        												<div class="lane">
+                        													<div class="lane">
+                        														<div class="lane"></div>
+                        													</div>
+                        												</div>
+                        											</div>
+                        										</div>
+                        									</div>
+                        								</div>
+                        							</div>
+                        						</div>
+                        					</div>	
+                        				</div>
+                        			</div>
+                        		</div>
+                        	</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="knuckcontainer">
+<div class="lane">
+    <div class="lane">
+        <div class="lane">
+            <div class="lane">
+                <div class="lane">
+                    <div class="lane">
+                    	<div class="lane">
+                        	<div class="lane">
+                        		<div class="lane">
+                        			<div class="lane">
+                        				<div class="lane">
+                        					<div class="lane">
+                        						<div class="lane">
+                        							<div class="lane">
+                        								<div class="lane">
+                        									<div class="lane">
+                        										<div class="lane">
+                        											<div class="lane">
+                        												<div class="lane">
+                        													<div class="lane">
+                        														<div class="lane"></div>
+                        													</div>
+                        												</div>
+                        											</div>
+                        										</div>
+                        									</div>
+                        								</div>
+                        							</div>
+                        						</div>
+                        					</div>	
+                        				</div>
+                        			</div>
+                        		</div>
+                        	</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
 
 <!-- Player Info & scoreboard -->
-<h3>Player 1: Sonic</h3>
-<h3>Player 2: Knuckles</h3>
-<div id="entrname" class="inline-block">
-<input type="form" class="player1" value="Enter your name">
-<input type="form" class="player2" value="Enter your name">
+<h3 class="player1">Player 1: Sonic</h3>
+<h3 class="player2">Player 2: Knuckles</h3>
+
+<div id="entrname" class="inline">
+<input type="form" class="playerform1" value="Enter your name">
+<input type="form" class="playerform2" value="Enter your name">
 </div>
-
-<!-- Javascript / jQuery -->
-
-<script class="movement" type="text/javascript" src="base.js"></script>
 
 
 </body>

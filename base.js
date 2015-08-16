@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+
+
+console.log('JS is working');
+
+
+
 // var sonic = document.getElementById('sonic');
 // var knuckles = document.getElementById('knuckles');
 // var board = document.getElementById('gameboard');
@@ -16,10 +22,6 @@ $(document).ready(function() {
 //   		this.src = "css/imgs/sonicsprite.png"
 //   	}
 
-
-    $("#players").keypress( function() {
-    		left: "++";
-    }
 
 
 
