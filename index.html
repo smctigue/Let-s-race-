@@ -9,17 +9,19 @@
 </head>
 <body>
 
-<!-- Header img and refresh button (for the moment 'Reset' only reloads the page-->
+<!-- Header img and refresh button -->
 <img src="css/imgs/readygo.jpg" alt="Ready Go">
 <div class="inline-block button">
 	<span id="count">5</span>
 	<input type="button" href="#" id="startbtn" value="Start">
 	<input type="button" id="resetbtn" value="Reset" onClick="history.go(0)">
 </div>
+
 <!-- Start/Finish & Characters -->
 
 <img class="startlnimg" src="css/imgs/start.jpg" alt="starting line">
 <img class="finishlnimg" src="css/imgs/finish.jpg" alt="finish line">
+<img class="img2" src="css/imgs/sonic_knuckles.png">
 
 <div id="sonicontainer">
 	<div id="sonicguy"><img id="sonicimg" src="css/imgs/sonicsprite.png" alt="sonicstill"></div>
@@ -119,12 +121,12 @@
 </div>
 
 <!-- Player Info & scoreboard -->
-
-<h3 class="player1 inline-block">Player 1: Sonic (a)</h3>
-<h3 class="player2 inline-block">Player 2: Knuckles (l)</h3>
-<h2 class="scoreboard"><i>And the winner is...</i></h2>
+<div="player">
+<h3 class="inline-block">Player 1: <u>Sonic (a)</u></h3>
+<h3 class="inline-block">Player 2: <u>Knuckles (l)</u></h3>
+</div>
+<h2 class="scoreboard"><i>And the winner is...</i></h2> 
 <h1 class="newwinner"></h1>
-
 </body>
 </html>
 

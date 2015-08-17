@@ -39,8 +39,8 @@ $('#startbtn').click(function(){
 });
 
 
-/* Move characters 10px per specific keypress and 
-stops them once crossed the finish line */
+/* Move characters 10px per specific keypress / stops them / adds winner to page */
+
 
 function animate(x) {
 	var winner;
@@ -66,10 +66,9 @@ function animate(x) {
 
 
 
-
 // ---------------------------------------------------
 
-//Close $(document).ready
+// Closes (document).ready
 });
 
 

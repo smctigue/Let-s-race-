@@ -101,22 +101,24 @@ h3 {
 /* Player text & Forms */
 
 
-.player1 {
+.player {
+	position: relative;
 	float: left;
-	top: 100px;
 	left: 100px;
 }
-.player2 {
+.img2 {
+	position: relative;
 	float: right;
-	top: 100px;
-	right: 100px;
+	width: 20%;
+	top: 190px;
+	right: -25px;
 }
 .scoreboard {
+	position: relative;
 	color: #737373;
 	text-align: center;
-	margin-top: 125px;
+	margin-top: 50px;
 }
 .newwinner {
 	text-align: center;
-	margin-top: 10px;
 }
