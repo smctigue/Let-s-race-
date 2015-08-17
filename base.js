@@ -37,7 +37,7 @@ $('#startRace').click(function(){
       span.innerHTML = counter;
     }
     if (counter === 0) {
-    	$("#count").text( "Go!" )
+    	$("#count").text( "Race!" )
         clearInterval(counter);
     }
   }, 1000);
