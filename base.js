@@ -9,12 +9,13 @@ var sonicontain = document.getElementById('sonicontainer');
 var knuckles = document.getElementById('knucklesguy');
 var knucklescontain = document.getElementById('knuckcontainer');
 
-var finishline = document.getElementById('finline');
-
 var moveLeftS = 0;
 var moveLeftK = 0;
 
+
+
 // Get ready to race!
+// Start button starts race 
 
 $('#startRace').click(function(){
   var counter = 5;
@@ -36,17 +37,18 @@ $('#startRace').click(function(){
 
 
 
-/*Moves characters 5px per specific keypress and 
-stops them once crossed the finish line*/
+/* Move characters 10px per specific keypress and 
+stops them once crossed the finish line */
 
+var winner;
 function animate(x) {
 	if (moveLeftS === 1000) {
-		console.log('Sonic is the winner!');
-		
+		winner = 'Sonic';
+		console.log(winner + ' is the winner!');	
 	}
 	else if (moveLeftK === 1000) {
-		console.log('Knuckles is the winner!')
-		
+		winner = 'Knuckles';
+		console.log(winner + ' is the winner!');
 	}
 	else if (x.keyCode === 65) {
 		moveLeftS += 10;
@@ -56,8 +58,8 @@ function animate(x) {
 		moveLeftK += 10;
 		knucklesguy.style.left = moveLeftK + 'px';
 	}
-}
 
+}
 
 
 
@@ -68,7 +70,7 @@ function animate(x) {
 
 
 
-//----------------------------------------------
+// ---------------------------------------------------
 
 //Close $(document).ready
 });
