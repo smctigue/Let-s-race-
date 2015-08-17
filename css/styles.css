@@ -9,6 +9,7 @@ h3 {
 	top: 200px;
 }
 
+
 .inline-block > * { display: inline-block; }
 
 
@@ -29,7 +30,7 @@ h3 {
 }
 
 
-/* Images / Avatars */
+/* Images - Avatars */
 
 
 .startlnimg {

@@ -2,6 +2,7 @@ console.log('JS is working');
 $(document).ready(function(){
 
 
+
 // ---------------------------------------------------
 // var sonic = document.getElementById('sonicguy');
 // var sonicontain = document.getElementById('sonicontainer');
@@ -18,7 +19,7 @@ $(document).ready(function(){
 var moveLeftS = 0;
 var moveLeftK = 0;
 
-// Start button starts race 
+// Start button - countdown to start race 
 
 $('#startbtn').click(function(){
   var counter = 5;
@@ -39,8 +40,7 @@ $('#startbtn').click(function(){
 });
 
 
-/* Move characters 10px per specific keypress / stops them / adds winner to page */
-
+// Move characters 10px per specific keypress / stops them / adds winner to page 
 
 function animate(x) {
 	var winner;
