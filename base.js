@@ -36,19 +36,18 @@ $('#startRace').click(function(){
 });
 
 
-
 /* Move characters 10px per specific keypress and 
 stops them once crossed the finish line */
 
-var winner;
 function animate(x) {
+	var winner;
 	if (moveLeftS === 1000) {
 		winner = 'Sonic';
-		console.log(winner + ' is the winner!');	
+		$('.scoreboard').text(winner + ' is the winner!');
 	}
 	else if (moveLeftK === 1000) {
 		winner = 'Knuckles';
-		console.log(winner + ' is the winner!');
+		$('.scoreboard').text(winner + ' is the winner!');
 	}
 	else if (x.keyCode === 65) {
 		moveLeftS += 10;
@@ -58,15 +57,12 @@ function animate(x) {
 		moveLeftK += 10;
 		knucklesguy.style.left = moveLeftK + 'px';
 	}
-
 }
 
 
 
 
 // Count each rounds winner on the scoreboard
-
-
 
 
 
@@ -78,7 +74,10 @@ function animate(x) {
 
 
 
-
+	// $('span').on('click', function() { 
+	//   var winner = $(this).text();
+	// 	$('scoreboard').append("<li>" + winner + "</li>");
+	// });
 
 
 
