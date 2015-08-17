@@ -3,11 +3,11 @@ $(document).ready(function(){
 
 // ---------------------------------------------------
 
-var sonic = document.getElementById('sonicguy');
-var sonicontain = document.getElementById('sonicontainer');
+// var sonic = document.getElementById('sonicguy');
+// var sonicontain = document.getElementById('sonicontainer');
 
-var knuckles = document.getElementById('knucklesguy');
-var knucklescontain = document.getElementById('knuckcontainer');
+// var knuckles = document.getElementById('knucklesguy');
+// var knucklescontain = document.getElementById('knuckcontainer');
 
 var moveLeftS = 0;
 var moveLeftK = 0;
@@ -17,7 +17,7 @@ var moveLeftK = 0;
 // Get ready to race!
 // Start button starts race 
 
-$('#startRace').click(function(){
+$('#startbtn').click(function(){
   var counter = 5;
   setInterval(function() {
       counter -= 1;
@@ -62,23 +62,12 @@ function animate(x) {
 
 
 
-// Count each rounds winner on the scoreboard
-
 
 
 // ---------------------------------------------------
 
 //Close $(document).ready
 });
-
-
-
-
-	// $('span').on('click', function() { 
-	//   var winner = $(this).text();
-	// 	$('scoreboard').append("<li>" + winner + "</li>");
-	// });
-
 
 
 

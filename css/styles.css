@@ -15,8 +15,20 @@ h3 {
 
 .inline-block > * { display: inline-block; }
 
-.button { text-align: center; 
-			margin-top: 30px;
+.button { 
+	position: relative;
+	text-align: center; 
+	margin-top: 20px;
+}
+#startbtn {
+	border: .1em solid blue;
+	background-color: white;
+	box-shadow: 2px 2px 2px #888888;
+}
+#resetbtn {
+	border: .1em solid red;
+	background-color: white;
+	box-shadow: 2px 2px 2px #888888;
 }
 
 /* Images / Avatars */
@@ -32,14 +44,14 @@ h3 {
 }
 #sonicguy {
 	position: absolute;
-	margin-top: 1px;
+	margin-top: 8px;
 	margin-left: -23px;
 	width: 9%;
 	left: 0;
 }
 #knucklesguy {
 	position: absolute;
-	margin-top: 82px;
+	margin-top: 89px;
 	margin-left: -13px;
 	width: 8%;
 	left: 0;
