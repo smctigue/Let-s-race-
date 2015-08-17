@@ -57,7 +57,13 @@ h3 {
 	width: 8%;
 	left: 0;
 }
-
+.img2 {
+	position: relative;
+	float: right;
+	width: 20%;
+	top: 190px;
+	right: -25px;
+}
 
 /* Gameboard / Lanes */
 
@@ -106,13 +112,6 @@ h3 {
 	position: relative;
 	float: left;
 	left: 100px;
-}
-.img2 {
-	position: relative;
-	float: right;
-	width: 20%;
-	top: 190px;
-	right: -25px;
 }
 .scoreboard {
 	position: relative;
