@@ -1,20 +1,23 @@
 console.log('JS is working');
 $(document).ready(function(){
 
-// ---------------------------------------------------
 
+// ---------------------------------------------------
 // var sonic = document.getElementById('sonicguy');
 // var sonicontain = document.getElementById('sonicontainer');
 
 // var knuckles = document.getElementById('knucklesguy');
 // var knucklescontain = document.getElementById('knuckcontainer');
+// ---------------------------------------------------
 
-var moveLeftS = 0;
-var moveLeftK = 0;
 
 
 
 // Get ready to race!
+
+var moveLeftS = 0;
+var moveLeftK = 0;
+
 // Start button starts race 
 
 $('#startbtn').click(function(){
@@ -26,7 +29,7 @@ $('#startbtn').click(function(){
       span.innerHTML = counter;
     }
     if (counter === 0) {
-    	$("#count").text( "Race!" )
+    	$("#count").text( "Go!" )
         clearInterval(counter);
 
         //Calls function animate()

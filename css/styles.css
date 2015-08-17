@@ -1,12 +1,8 @@
-
 img {
 	display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-}
-hr {
-	position: absolute;
 }
 h3 {
 	position: relative;
@@ -14,6 +10,7 @@ h3 {
 }
 
 .inline-block > * { display: inline-block; }
+
 
 .button { 
 	position: relative;
@@ -31,12 +28,15 @@ h3 {
 	box-shadow: 2px 2px 2px #888888;
 }
 
+
 /* Images / Avatars */
+
 
 .startlnimg {
 	width: 7%;
 	float: left;
-	margin-top: 30px}
+	margin-top: 30px
+}
 .finishlnimg { 
 	width: 5%;
 	float: right;
@@ -57,23 +57,15 @@ h3 {
 	left: 0;
 }
 
+
 /* Gameboard / Lanes */
+
 
 #sonicontainer {
 	position: relative;
 	height: 165px;
 	width: 85%;
 	margin: 0 auto;
-/*	border: 1px solid black;*/
-}
-.finline {
-	position: relative;
-	height: 165px;
-	width: 1%;
-	border:1px solid black;
-	background-color: #eee;
-	left: 997px;
-	top: 1;
 }
 .soniclanes {
 	position: absolute;
@@ -95,6 +87,16 @@ h3 {
 	line-height: 2px;
 	left: 50px;
 }
+.finline {
+	position: relative;
+	height: 165px;
+	width: 1%;
+	border:1px solid black;
+	background-color: #eee;
+	left: 997px;
+	top: 1;
+}
+
 
 /* Player text & Forms */
 
@@ -102,12 +104,12 @@ h3 {
 .player1 {
 	float: left;
 	top: 100px;
-	left: 25px;
+	left: 100px;
 }
 .player2 {
 	float: right;
 	top: 100px;
-	right: 25px;
+	right: 100px;
 }
 .scoreboard {
 	color: #737373;
