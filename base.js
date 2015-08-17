@@ -1,37 +1,25 @@
 console.log('JS is working');
 $(document).ready(function(){
 
-// -------------------------------------------
-
-//Change image on move (attempt)
-
-// $('#sonicspn').html('<css/imgs/sonicsprite.png>')
-//   $('#sonicspn img').keypress( function()) {
-//   		this.src = "http://i1.someimage.com/YGF3N5f.gif"
-//   }
-//   	function () {
-//   		this.src = "css/imgs/sonicsprite.png"
-//   	}
-
-
 // ---------------------------------------------------
 
 var sonic = document.getElementById('sonicguy');
 var sonicontain = document.getElementById('sonicontainer');
 
 var knuckles = document.getElementById('knucklesguy');
-var knucklescont = document.getElementById('knuckcontainer');
+var knucklescontain = document.getElementById('knuckcontainer');
 
 var finishline = document.getElementById('finline');
 
 var moveLeftS = 0;
 var moveLeftK = 0;
 
+// Get ready to race!
 
 $('#startRace').click(function(){
   var counter = 5;
   setInterval(function() {
-    counter -= 1;
+      counter -= 1;
     if (counter >= 0) {
       span = document.getElementById("count");
       span.innerHTML = counter;
@@ -39,50 +27,48 @@ $('#startRace').click(function(){
     if (counter === 0) {
     	$("#count").text( "Race!" )
         clearInterval(counter);
+
+        //Calls function animate()
+        document.onkeydown = animate;
     }
   }, 1000);
-    
 });
 
 
 
-// Ends race
-function endRace(a) {
-	if (sonic == finishline) {
-		alert("Sonic wins!");
-	}
+/*Moves characters 5px per specific keypress and 
+stops them once crossed the finish line*/
 
-
-document.onkeydown = animate;
-}
-
-//Moves characters by 5 px per specific keystroke
 function animate(x) {
-	if (x.keyCode === 65) {
+	if (moveLeftS === 1000) {
+		console.log('Sonic is the winner!');
+		
+	}
+	else if (moveLeftK === 1000) {
+		console.log('Knuckles is the winner!')
+		
+	}
+	else if (x.keyCode === 65) {
 		moveLeftS += 10;
 		sonicguy.style.left = moveLeftS + 'px';
 	}
-	if (x.keyCode === 76) {
+	else if (x.keyCode === 76) {
 		moveLeftK += 10;
 		knucklesguy.style.left = moveLeftK + 'px';
 	}
-
 }
 
 
 
-// Calls for race to begin!
-endRace();
-
-
-
-
-//End the 'round'
 
 
 // Count each rounds winner on the scoreboard
-// use for loop? Check rps/fund game
 
+
+
+
+
+//----------------------------------------------
 
 //Close $(document).ready
 });
