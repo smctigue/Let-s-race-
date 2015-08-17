@@ -33,14 +33,14 @@ h3 {
 
 /* Images / Avatars */
 
-.startln {
+.startlnimg {
 	width: 7%;
 	float: left;
 	margin-top: 30px}
-.finishln { 
+.finishlnimg { 
 	width: 5%;
 	float: right;
-	margin-top: 35px;
+	margin-top: 37px;
 }
 #sonicguy {
 	position: absolute;
@@ -73,7 +73,7 @@ h3 {
 	border:1px solid black;
 	background-color: #eee;
 	left: 997px;
-	top: -1;
+	top: 1;
 }
 .soniclanes {
 	position: absolute;
@@ -110,6 +110,7 @@ h3 {
 	right: 25px;
 }
 .scoreboard {
+	color: #737373;
 	text-align: center;
 	margin-top: 125px;
 }
