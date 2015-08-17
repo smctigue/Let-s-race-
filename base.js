@@ -43,11 +43,11 @@ function animate(x) {
 	var winner;
 	if (moveLeftS === 1000) {
 		winner = 'Sonic';
-		$('.scoreboard').text(winner + ' is the winner!');
+		$('.newwinner').text(winner + '!');
 	}
 	else if (moveLeftK === 1000) {
 		winner = 'Knuckles';
-		$('.scoreboard').text(winner + ' is the winner!');
+		$('.newwinner').text(winner + '!');
 	}
 	else if (x.keyCode === 65) {
 		moveLeftS += 10;
