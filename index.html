@@ -1,59 +1,49 @@
+<!DOCTYPE html>
 <html>
-
 <head>
     <title>Let's Race!</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
-
     <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script class="movement" type="text/javascript" src="base.js"></script>
 
 </head>
-
 <body>
 
-    <!-- Header img and refresh button -->
-
+    <!-- Header image & button -->
     <img id="banner" src="https://vgboxart.com/resources/logo/1982_sonic-knuckles-prev.png" alt="banner">
-
     <div class="inline-block button">
         <span id="count">3</span>
         <input type="button" href="#" id="startbtn" value="Start">
         <input type="button" id="resetbtn" value="Reset" onClick="history.go(0)">
     </div>
 
-    <!-- Template Placeholder -->
-    <div id="board-placeholder"></div>
+    <!-- Characters & Gameboard -->
+    <div id="sonicontainer">
 
-    <!-- Character imgs -->
-    <script type="text/template" id="game-template">
+        <div id="sonicguy"><img id="sonicimg" src="css/imgs/sonicsprite.png" alt="sonicstill"></div>
+        <div id="knucklesguy"><img id="knucklesimg" src="css/imgs/knucklessprite.png" alt="knucklesstill"></div>
+        <div class="finline"></div>
 
-        <div id="sonicontainer">
+        <table class="lanes">
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
 
-            <%= "<img src='" + image + "' width='5%'>" %>
+    </div>
 
-                <table class="lanes">
-                    <tr>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                    </tr>
-                </table>
-        </div>
-    </script>
-
-    <!-- Player Info & scoreboard -->
-    <div class="inline-block player">
+    <!-- Player Info & Scoreboard -->
+    <div class="inline player">
         <h3 class="inline">Player 1: </h3>
-        <input type="text" placeholder="Sonic">
+        <input type="text" id="player1" placeholder="Sonic (a)">
+        <br>
         <br>
         <h3 class="inline">Player 2: </h3>
-        <input type="text" placeholder="Knuckles">
+        <input type="text" id="player2" placeholder="Knuckles (l)">
     </div>
 
     <h2 class="scoreboard"><i>And the winner is...</i></h2>
@@ -61,18 +51,6 @@
 
 
     <!-- Annoying tune -->
-<!--     <embed src='css/imgs/sonictune.mp3' hidden='true' autostart='true' loop='false' type='audio/mpeg' /> -->
-
+    <embed src='css/imgs/sonictune.mp3' hidden='true' autostart='true' loop='false' type='audio/mpeg' />
 </body>
-
 </html>
-
-
-
-
-
-<!--  Goes in template if necessary -->
-<!-- 
-	<div id="sonicguy"><img id="sonicimg" src="css/imgs/sonicsprite.png" alt="sonicstill"></div>
-	<div id="knucklesguy"><img id="knucklesimg" src="css/imgs/knucklessprite.png" alt="knucklesstill"></div>
- -->
