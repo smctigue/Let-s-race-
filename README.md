@@ -1,5 +1,5 @@
 # Let's race!
-WDI / Week 1 Project
+WDI / Racing Game
 
 Two players test their button mashing skills with the speed of Sonic and Knuckles:
   - Add name
